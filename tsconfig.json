@@ -23,5 +23,16 @@
     "types": ["element-plus/global"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist"],
+  "compileOnSave": true,
+  "esModuleInterop": true,
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["src/*"]
+  },
+  "typeRoots": ["node_modules/@types", "src/types"],
+  "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+  "allowSyntheticDefaultImports": true,
+  "resolveJsonModule": true,
   "references": [{ "path": "./tsconfig.node.json" }]
 }

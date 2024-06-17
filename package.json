@@ -20,9 +20,6 @@
       "prettier --write",
       "eslint --fix",
       "git add"
-    ],
-    "*.{vue,less,scss,sass,html}": [
-      "npm run lint:css"
     ]
   },
   "dependencies": {
